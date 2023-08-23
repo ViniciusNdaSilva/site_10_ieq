@@ -11756,7 +11756,7 @@ li {
 
 @media (max-width: 475px) {
   .img-agenda img {
-    height: 250px;
+    height: 208px;
   }
 
   .card-contribua {
@@ -11781,7 +11781,7 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1px;
+    margin: 0px 0px 0px 28px;
   }
 
   .div_redes_logo {
