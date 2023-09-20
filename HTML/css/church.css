@@ -51,15 +51,15 @@ a {
 }
 a:hover,
 a:focus {
-  color: #e95d00;
+  color: #2135a6;
   text-decoration: none;
 }
 .link-reverse {
-  color: #e95d00;
+  color: #2135a6;
 }
 .link-reverse:hover,
 .link-reverse:focus {
-  color: #ca5100;
+  color: #2135a6;
 }
 strong,
 b {
@@ -175,8 +175,8 @@ h6 {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #483f34;
-  background-color: #fdbf51;
-  border-color: #e7ad47;
+  background-color: #6796f2;
+  border-color: #6796f2;
 }
 .well {
   background: #f9f1e6;
@@ -185,7 +185,7 @@ h6 {
   box-shadow: none;
 }
 .highlight-bg {
-  background: #f9f1e6;
+  background: #f2f2f2;
   padding: 24px 0;
 }
 .has-margin-top {
@@ -334,13 +334,13 @@ h6 {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:active {
-  color: #e95d00;
+  color: #2135a6;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #e95d00;
+  color: #2135a6;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -692,7 +692,7 @@ h6 {
   width: 10px;
   height: 10px;
   margin: 5px;
-  background: #ddcbab;
+  background: #6796f2;
   display: block;
   -webkit-backface-visibility: visible;
   -webkit-transition: opacity 200ms ease;
@@ -706,7 +706,7 @@ h6 {
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #ac7f62;
+  background: #2135a6;
 }
 /*========== 8. LATEST BLOG ==============*/
 
