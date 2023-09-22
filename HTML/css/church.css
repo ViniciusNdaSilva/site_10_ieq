@@ -1238,4 +1238,19 @@ a.list-group-item.active > .badge,
 
 .img-dizimo-ofertas img {
   width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-dizimo-ofertas {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .img-dizimo-ofertas img {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
 }
