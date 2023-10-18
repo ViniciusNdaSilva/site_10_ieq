@@ -845,12 +845,10 @@ footer a {
 }
 footer a:hover,
 footer a:focus {
-  color: #ffb483;
+  color: #2135a6;
 }
 .copyright {
   background: #494743;
-  padding-top: 20px;
-  padding-bottom: 10px;
   margin-top: 35px;
 }
 .social-icons a {
@@ -862,8 +860,13 @@ footer a:focus {
 }
 /*========== 14. SUB PAGES ==============*/
 
+.background-color {
+  background-color: #e1e1e1;
+  padding-top: 15px;
+}
+
 .subpage-head {
-  background-color: #f2f2f2;
+  background-color: #e1e1e1;
   padding-top: 80px;
   padding-bottom: 20px;
 }
@@ -874,6 +877,10 @@ footer a:focus {
   .subpage-head {
     padding-top: 50px;
   }
+}
+
+.color-contact {
+  background-color: white !important;
 }
 /*========== 15. BLOG ==============*/
 
@@ -1256,4 +1263,37 @@ a.list-group-item.active > .badge,
     display: flex;
     justify-content: center;
   }
+}
+
+.container_inscri {
+  background: linear-gradient(to bottom, #2a08d5, #5e7790);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-inscri {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  text-align: center;
+  border-radius: 15px;
+  border: #000 2px;
+}
+
+.card-inscri h3 {
+  font-size: 30px;
+}
+.card-inscri p {
+  font-size: 22px;
+}
+
+.container_inscri h3,
+p {
+  margin: 20px;
 }
