@@ -282,6 +282,17 @@ h6 {
   }
 }
 
+.align-itens-pastores {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-pastores {
+  background-image: url();
+  background-size: cover;
+}
+
 /*========== 2. NAVIGATION BAR ==============*/
 
 @media (min-width: 768px) {

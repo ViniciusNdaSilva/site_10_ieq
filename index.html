@@ -52,10 +52,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Início</a></li>
-            <li><a href="about.html">A igreja</a></li>
-            <li><a href="events-programs.html">Programação</a></li>
-            <li><a href="contact.html">Contato</a></li>
+            <li><a href="#myCarousel">Início</a></li>
+            <li><a href="#pastores">Sobre nós</a></li>
+            <li><a href="#programacao">Programação</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </div>
         <!--/.nav-collapse -->
@@ -188,7 +188,7 @@
 
     <!--SUBPAGE HEAD-->
 
-    <div class="subpage-head has-margin-bottom">
+    <div id="pastores" class="subpage-head has-margin-bottom">
       <div class="container">
         <h3>Nossos Pastores</h3>
       </div>
@@ -196,71 +196,73 @@
 
     <!-- // Sobre Pastores -->
 
-    <div class="container">
-      <div class="row feature-block">
-        <div class="col-md-4 col-sm-6 has-margin-bottom">
-          <img
-            class="img-responsive"
-            src="images/team-1.jpg"
-            alt="catholic church"
-          />
-          <h5>Pr: Rogério Palma</h5>
-          <p>
-            Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
-            malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
-            commodo, tortor mauris condimentum nibh, ut fermentum massa.
-          </p>
-          <p>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/rogerio.palma.9"
-              role="button"
-              >Facebook</a
-            >
-            /
-            <a
-              target="_blank"
-              href="https://www.instagram.com/rogeriopalma/"
-              role="button"
-              >Instagram</a
-            >
-          </p>
+    <div class="background-pastores">
+      <div class="container">
+        <div class="row feature-block align-itens-pastores">
+          <div class="col-md-4 col-sm-6 has-margin-bottom">
+            <img
+              class="img-responsive"
+              src="images/team-1.jpg"
+              alt="catholic church"
+            />
+            <h5>Pr: Rogério Palma</h5>
+            <p>
+              Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem
+              malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus
+              commodo, tortor mauris condiment
+            </p>
+            <p>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/rogerio.palma.9"
+                role="button"
+                >Facebook</a
+              >
+              /
+              <a
+                target="_blank"
+                href="https://www.instagram.com/rogeriopalma/"
+                role="button"
+                >Instagram</a
+              >
+            </p>
+          </div>
+          <!-- /.col-md-4 -->
+          <div class="col-md-4 col-sm-6 has-margin-bottom">
+            <img
+              class="img-responsive"
+              src="images/team-2.jpg"
+              alt="ministry sermon"
+            />
+            <h5>Pra: Fabiane Palma</h5>
+            <p>
+              Fermentum massa.Etiam porta sem malesuada magna mollis euismod.
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+              nibh, ut fermentum massa.
+            </p>
+            <p>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100077446345529"
+                role="button"
+                >Facebook</a
+              >
+              /
+              <a
+                target="_blank"
+                href="https://www.instagram.com/fabianepalma/"
+                role="button"
+                >Instagram</a
+              >
+            </p>
+          </div>
+          <!-- /.col-md-4 -->
         </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4 col-sm-6 has-margin-bottom">
-          <img
-            class="img-responsive"
-            src="images/team-2.jpg"
-            alt="ministry sermon"
-          />
-          <h5>Pra: Fabiane Palma</h5>
-          <p>
-            Fermentum massa.Etiam porta sem malesuada magna mollis euismod.
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-            nibh, ut fermentum massa.
-          </p>
-          <p>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/profile.php?id=100077446345529"
-              role="button"
-              >Facebook</a
-            >
-            /
-            <a
-              target="_blank"
-              href="https://www.instagram.com/fabianepalma/"
-              role="button"
-              >Instagram</a
-            >
-          </p>
-        </div>
-        <!-- /.col-md-4 -->
       </div>
     </div>
 
     <!-- BLOG LIST / LATEST SERMONS -->
-    <div class="background-color">
+    <div id="programacao" class="background-color">
       <div class="container has-margin-top has-margin-bottom">
         <div class="row">
           <div class="col-md-9 has-margin-bottom">
@@ -551,7 +553,7 @@
     </div>
 
     <!-- se cadastre.  -->
-    <section class="container_inscri">
+    <section id="contato" class="container_inscri">
       <div class="card-inscri">
         <h3>Já é nosso membro e ainda não se cadastrou?</h3>
         <p>Cadastre-se no link abaixo:</p>
@@ -673,7 +675,7 @@
       <div class="copyright">
         <div class="container">
           <p class="text-center">
-            Copyright © 2023 All rights reserved 10 IEQ Paranaguá
+            Copyright © 2023 All rights reserved Décima IEQ Paranaguá
             <br />
             Design By <a href="">VinsSoftware</a>
           </p>
@@ -685,7 +687,33 @@
     <!-- // END -->
 
     <!-- Bootstrap core JavaScript
+    
 ================================================== -->
+    <script>
+      const links = document.querySelectorAll('a[href^="#"]');
+
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          const target = document.querySelector(link.getAttribute("href"));
+
+          // Obtém a altura da janela de visualização
+          const windowHeight = window.innerHeight;
+
+          // Calcula a posição de rolagem ajustada
+          const scrollPosition =
+            target.getBoundingClientRect().top +
+            window.scrollY -
+            windowHeight * 0.115;
+
+          window.scrollTo({
+            top: scrollPosition,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
