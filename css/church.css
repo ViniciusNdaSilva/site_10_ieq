@@ -185,7 +185,7 @@ h6 {
   box-shadow: none;
 }
 .highlight-bg {
-  background: #f2f2f2;
+  background: #e1e1e1;
   padding: 24px 0;
 }
 .has-margin-top {
@@ -739,11 +739,14 @@ h6 {
   border-top: 0;
 }
 a.list-group-item-text {
-  color: #9e9e9e;
+  color: #2135a6;
 }
 a.list-group-item:hover,
 a.list-group-item:focus {
   background-color: transparent;
+}
+.list-group-item P {
+  color: #2c2c2a;
 }
 /*========== 10. IMAGE GALLERY ==============*/
 
@@ -869,7 +872,7 @@ footer a:focus {
 }
 @media (min-width: 992px) {
   .subpage-head {
-    padding-top: 110px;
+    padding-top: 50px;
   }
 }
 /*========== 15. BLOG ==============*/
